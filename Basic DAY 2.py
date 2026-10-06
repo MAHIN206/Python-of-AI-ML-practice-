@@ -48,3 +48,5 @@ while True:
 
     if prev > accuracy:
         changed_or_not = False
+        print("accuracy is decreased")
+        print("accuracy is increased")
