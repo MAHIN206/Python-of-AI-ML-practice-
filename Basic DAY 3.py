@@ -169,8 +169,8 @@ random_list = [x + 10 for x in range(1, 101) if x % 2 != 0]
 print(random_list)
 
 
-fruits = ['APPLE', 'ORange', 'liCHi']
+fruits = ['apple', 'orange', 'lichi']
 
-upper_fruits = [fruit.lower() for fruit in fruits]
+upper_fruits = [fruit.upper() for fruit in fruits]
 
 print(upper_fruits)
