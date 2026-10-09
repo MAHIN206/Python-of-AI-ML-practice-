@@ -65,3 +65,78 @@ try:
 except KeyError:
     print("5 was already removed by pop()")
 print(s)
+
+a = {1, 2, 3}
+b = {1, 2, 5, 6, 4}
+
+print(a.union(b))
+print(a.intersection(b))
+print(a.isdisjoint(b))
+print(a.issubset(b))
+
+dic = {}
+print(type(dic))
+
+dic = {"name": "Phitron", "age": 20, "address": "Dhaka", "numbers": [10, 20, 30]}
+print(type(dic), dic)
+
+print(dic["numbers"])
+print(dic.get("age"))
+
+dic["name"] = "Phitron AI/ML"
+
+dic = {"name": "Phitron", "age": 20, "address": "Dhaka", "numbers": [10, 20, 30], "age": 30}
+print(dic)
+
+print(dic)
+print(dic.get("math_marks"))
+print(dic.get("math_marks", 0))
+
+dic = {"name": "Phitron", "age": 20, "address": "Dhaka", "numbers": [10, 20, 30], "age": 30}
+
+print(dic)
+dic["math_marks"] = 30
+print(dic)
+dic.update({"english_marks": 40})
+print(dic)
+
+del dic["math_marks"]
+print(dic)
+
+dic_2 = dic.copy()
+print(dic_2)
+
+try:
+    dic_3 = {{"name": "adil", "age": 20}: 20}
+    print(dic_3)
+except TypeError as e:
+    print("TypeError:", e)
+
+dic = {"name": "Phitron", "age": 20, "address": "Dhaka", "numbers": [10, 20, 30], "age": 30}
+
+keys = dic.keys()
+print(keys)
+
+dic["math_numebers"] = 30
+print(keys)
+
+values = dic.values()
+print(values)
+
+dic["math_numebers"] = 40
+print(values)
+
+items = dic.items()
+print(items)
+
+for key, value in dic.items():
+    print(key, value)
+
+square = {x: x**2 for x in range(1, 11) if x % 2 == 0}
+print(square)
+
+Co_ordinates = [(10, 10.5), (20.5, 192), (101, 102)]
+Locations = ["dhaka", "chattogram", "sylhet"]
+
+exact_location = {co_or: loc for co_or, loc in zip(Co_ordinates, Locations)}
+print(exact_location)
