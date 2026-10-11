@@ -1,4 +1,4 @@
-# Structure of a Function
+
 
 def welcome_message():
     print("hello user")
@@ -13,7 +13,7 @@ welcome_message("Phitron")
 welcome_message()
 
 
-# Function with Return Value
+
 
 def adder(a, b):
     """
@@ -28,7 +28,7 @@ m = adder(10, 30) * 5
 print(m)
 
 
-# Different Types of Arguments
+
 
 def adder(a, b, c):
     print(f"{a},{b},{c}")
@@ -56,7 +56,7 @@ def adder(**kwargs):
 adder(a=10, b=30, c=40, n_estimator=50)
 
 
-# Return Type
+
 
 def welcome_message():
     print("hello user")
@@ -84,8 +84,6 @@ def welcome_message(user="None"):
 print(type(welcome_message()))
 
 
-# Iterator
-
 s = {10, 20, 30, 40, 50}
 
 s_iter = iter(s)
@@ -100,7 +98,6 @@ for i in s:
     print(i)
 
 
-# Generator
 
 lst = [x for x in range(500)]
 
