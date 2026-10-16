@@ -92,4 +92,4 @@ with open("./sample_data/sample.txt", "r") as file:
         map(lambda x: x.replace(" ", ""), string_list)
     )
 
-    number_of_character =
+    number_of_characters = list(map(len, string_list))
